@@ -2,8 +2,11 @@
 <html>
 <head>
 	<title>Ian's Portfolio</title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="assets/js/slides.js"></script>
 </head>
-<body>
+<body id="home">
 	<nav>
 		<ul>
     		<li><a href="/">Home</a></li>
@@ -14,9 +17,52 @@
 		</ul>
 	</nav>
 	<div class="container">
-	
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.  I added a menu and some classes</p>
+		<div class="title">
+			<h1>Hello World</h1>
+		</div>
+		<div class="content">
+			<div id="slider_1">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+					    <div class="numbertext">1 / 4</div>
+					    <img src="assets/img/mountains-clouds-forest-fog.jpg" style="width:100%">
+					    <div class="caption-text">Caption Text</div>
+					</div>
+
+					<div class="mySlides fade">
+					    <div class="numbertext">2 / 4</div>
+					    <img src="img2.jpg" style="width:100%">
+					    <div class="caption-text">Caption Two</div>
+					</div>
+
+					<div class="mySlides fade">
+					    <div class="numbertext">3 / 4</div>
+					    <img src="img3.jpg" style="width:100%">
+					    <div class="caption-text">Caption Three</div>
+					</div>
+
+					<div class="mySlides fade">
+					    <div class="numbertext">4 / 4</div>
+					    <img src="img3.jpg" style="width:100%">
+					    <div class="caption-text">Caption Four</div>
+					</div>
+
+					  <!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div><!-- /.slideshow-container -->
+				<br>
+
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				</div>
+			</div><!-- /#slider_1 -->
+			
+		</div><!-- /.content -->
 
 	</div><!-- /.container -->
 	<footer>
